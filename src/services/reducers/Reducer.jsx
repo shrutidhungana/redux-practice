@@ -11,7 +11,7 @@ const cardItems = (state=initialState,action) => {
                 ...state,
                 cardData: action.data
             }
-            break;
+            
         default:
             return {
                 state

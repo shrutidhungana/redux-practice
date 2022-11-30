@@ -2,7 +2,7 @@ import React from 'react'
 import img1 from '../images/img.jpeg'
 import './Home.css'
 
-const Home = () => {
+const Home = (props) => {
   return (
       <div>
           <div className = "add-to-cart">
@@ -23,7 +23,12 @@ const Home = () => {
                   </span>
               </div>
               <div className = "btn-wrapper item">
-              <button>Add to Cart</button>
+                  <button onClick={() => {
+                      props.addToCartHandler({
+                          price: "$1000",
+                          name: "Iphone-14"
+                      })
+                  }}>Add to Cart</button>
           </div>
               
           </div>
