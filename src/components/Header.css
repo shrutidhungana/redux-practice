@@ -8,7 +8,7 @@
 .cart-count{
     position: absolute;
     right: 10px;
-    top: 10px;
+    top: 12px;
     z-index: 1;
     background-color: red;
     padding: 7px;

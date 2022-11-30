@@ -1,4 +1,4 @@
-import {ADD_TO_CART} from '../Constants'
+import {ADD_TO_CART, REMOVE_FROM_CART} from '../Constants'
 export const addToCart =(data)=>{
     // console.warn("action",data)
     return {
@@ -7,3 +7,10 @@ export const addToCart =(data)=>{
     }
 }
 
+export const removeFromCart =(data)=>{
+    // console.warn("action",data)
+    return {
+        type:REMOVE_FROM_CART,
+        
+    }
+}

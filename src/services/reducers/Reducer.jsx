@@ -1,7 +1,5 @@
-import { ADD_TO_CART } from '../Constants'
-const initialState = {
-    cardData: []
-}
+import { ADD_TO_CART,REMOVE_FROM_CART } from '../Constants'
+
 export default function cardItems(state = [], action) {
     switch (action.type) {
         case ADD_TO_CART:
@@ -9,6 +7,12 @@ export default function cardItems(state = [], action) {
             return [
                 ...state,
                 {cardData: action.data}
+            ]
+        
+        case REMOVE_FROM_CART:
+            state.pop()
+            return [
+                ...state,
             ]
         default:
             return state
