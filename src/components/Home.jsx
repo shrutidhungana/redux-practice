@@ -3,11 +3,15 @@ import img1 from '../images/img.jpeg'
 import './Home.css'
 
 const Home = (props) => {
+    console.warn("props",props.data)
   return (
       <div>
-          <div className = "add-to-cart">
+          {/*<div className="add-to-cart">
+              <span>
+                 {props.data}
+              </span>
               <img src="https://static.vecteezy.com/system/resources/thumbnails/000/496/007/small/Ecommerce_998.jpg" alt="add-to-cart"/>
-              </div>
+  </div>*/}
           
           <h1> Home</h1>
           <div className = "cart-wrapper">
